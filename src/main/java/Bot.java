@@ -16,7 +16,7 @@ public class Bot extends ListenerAdapter {
                 .forceGuildOnly("892336997488816128").setActivity(Activity.competing("Java"));
         CommandClient commandClient = builder.build();
 
-        JDA client = JDABuilder.createDefault("OTc0ODY3MzQzNzIzMzQ3OTc4.GjQiU5.kGE8lnlgiPcQkvhrfceUkkl7KHSOlHl7-c0HfM")
+        JDA client = JDABuilder.createDefault("ur token")
                 .addEventListeners(commandClient)
                 .enableIntents(GatewayIntent.GUILD_MESSAGES, GatewayIntent.MESSAGE_CONTENT)
                 .setActivity(Activity.competing("Java")).build().awaitReady();
